@@ -18,11 +18,10 @@ public class PositionsController {
 
 	@Autowired
 	public PositionsController(PositionService positionService) {
-		super();
 		this.positionService = positionService;
 	}
 
-	@GetMapping("/getall")
+	@GetMapping("/getAll")
 	public List<JobPositions> getAll() {
 		return this.positionService.getAll();
 	}
